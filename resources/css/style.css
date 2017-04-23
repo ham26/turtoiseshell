@@ -1,0 +1,314 @@
+html {
+  font-size: 18px;
+  color: black;
+  font-family: Helvetica;
+}
+
+a {
+  text-decoration: none;
+  /*color: white;*/
+}
+
+/* set width */
+
+.top-bar, .main, .row, .descriptions, footer {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+
+/*  -------- header ------------*/
+
+
+header {
+  background: url(../images/glasses-bg.png) no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 30rem;
+  padding-top: 1rem;
+}
+
+
+.top-bar {
+    background-color: #3B9CA2;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.left-top-bar {
+  margin-left: 2rem;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+/* this will resize the logo */
+.left-top-bar img {
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+
+.top-bar ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  color: white;
+  padding: 1rem 0 1rem 1rem;
+}
+
+.top-bar ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  color: white;
+}
+
+nav a {
+  padding: 1rem;
+  color: white;
+}
+
+nav {
+  margin-right: 1rem;
+}
+
+.menu-link {
+  display: none;
+}
+/*  -------- tagline ------------*/
+
+.tagline-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content:flex-end;
+    margin-top: 10rem;
+}
+
+.tagline {
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: white;
+  padding: 1.5rem 5rem 1.5rem 5rem;
+  display: inline-block;
+  line-height: 1.2rem;
+}
+
+/*  -------- overview  ------------*/
+
+.overview {
+  margin-top: 3rem;
+  height: 8rem;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.item-image img {
+  margin: 0 3rem;
+
+}
+
+
+.paper img {
+  width: 3.5rem;
+  height: auto;
+}
+
+.item p {
+  margin: 0 auto;
+  text-align: center;
+  width: 7rem;
+}
+
+.ruler img, .truck img {
+  width: 5rem;
+  height: auto;
+}
+
+.item img, .item p{
+  display: block;
+}
+
+.item-image {
+  height: 5rem;
+}
+
+.short-rem {
+  width: 4rem;
+}
+
+/*---------- descriptions ------------*/
+
+.descriptions {
+  margin: 3rem 0 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.description-item {
+  width: 35%;
+  display: block;
+}
+
+.description-item:first-child {
+  margin-right: 5%;
+}
+
+.description-item p.title {
+  font-weight: bold;
+  font-size: 1rem;
+  width: 10rem;
+  background-color: #3B9CA2;
+  color: white;
+  padding: 0.5rem 0 0.5rem 1.25rem;
+  margin-bottom: 1rem;
+}
+
+
+/*---------------- footer --------------*/
+
+footer {
+  background-color: #EFF8FF;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  margin-left: 4rem;
+  padding: 4rem 0 4rem;
+}
+
+.footer-container img {
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+
+/*----------------------- 1024px -----------------*/
+
+@media only screen and (max-width: 1024px){
+  body {
+    max-width: 1024px;
+  }
+
+  header {
+    height: 22rem;
+    padding-top: 0;
+  }
+
+  .tagline {
+    font-size: 1.33rem;
+    padding: 0.75rem 4rem 0.75rem 4rem;
+  }
+
+
+  .tagline-container {
+      max-width: 960px;
+      margin: 0 auto;
+      margin-top: 5rem;
+  }
+}
+
+/*---------------- 470px -----------------*/
+
+@media only screen and (max-width: 470px){
+  body {
+    max-width: 470px;
+  }
+
+  .top-bar, .main, .row, .descriptions, footer {
+    max-width: 470px;
+    margin: 0 auto;
+  }
+
+
+  header {
+    height: 17rem;
+    padding-top: 0;
+    background-position: 20%;
+  }
+
+  .menu-link {
+    display: block;
+  }
+  .nav-link {
+    display: none;
+  }
+  .web-title {
+    display:none;
+  }
+  .tagline-container {
+      max-width: 470px;
+      margin: 0 auto;
+      text-align: center;
+      margin-top: 9rem;
+  }
+  .tagline {
+    width: 100%;
+    font-size: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .overview {
+    margin: 3.77rem auto;
+    height: auto;
+  }
+  .row {
+    display: block;
+    justify-content: center;
+  }
+  .item-image {
+    height: auto;
+  }
+
+  .item-image img {
+    margin: 1.54rem auto;
+  }
+  .row p {
+      font-size: 1rem;
+  }
+
+  .descriptions {
+    display: block;
+  }
+
+  .description-item {
+    width: 100%;
+  }
+
+  .description-item {
+    margin: 0 auto;
+  }
+
+    .description-item p.title {
+    width: 100%;
+    text-align: center;
+  }
+
+  .description-item p:last-child{
+    font-size:1rem;
+  }
+
+  .descriptions div:last-child{
+    margin-top: 4rem;
+  }
+
+  .copyright {
+    display: none;
+  }
+
+  footer {
+    margin-top: 4rem;
+  }
+  .footer-container {
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .footer-container img {
+    margin: 0;
+  }
+}
